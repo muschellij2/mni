@@ -2,7 +2,7 @@ Type: Package
 Package: mni
 Title: Human 'MNI' (Montreal Neurological Institute) Adult
     Templates
-Version: 0.1.0
+Version: 0.0.0.9000
 Authors@R: 
     person(given = "John",
            family = "Muschelli",
@@ -12,7 +12,10 @@ Authors@R:
 Description: Provides functions for downloading magnetic
     resonace imaging ('MRI') templates of humans.
 License: GPL-3
-Suggests: 
+Depends: 
+    R (>= 2.10)
+Suggests:
+    utils,
     covr,
     knitr,
     rmarkdown,
@@ -20,3 +23,4 @@ Suggests:
 Encoding: UTF-8
 LazyData: true
 VignetteBuilder: knitr
+RoxygenNote: 6.1.0
