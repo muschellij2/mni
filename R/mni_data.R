@@ -47,13 +47,15 @@ mni_datasets = function(type = c("nifti", "minc1", "minc2")) {
       "7-11 y.o Asymmetric (natural) templates" = "nihpd_asym_07.0-11.0",
       "7.5-13.5 y.o Asymmetric (natural) templates" = "nihpd_asym_07.5-13.5",
       "10-14 y.o Asymmetric (natural) templates" = "nihpd_asym_10.0-14.0",
-      "13-18.5 y.o Asymmetric (natural) templates " = "nihpd_asym_13.0-18.5"
+      "13-18.5 y.o Asymmetric (natural) templates" = "nihpd_asym_13.0-18.5"
     ),
     infant = c(
       "All Infant Atlases 0-4.5 years" = "nihpd_obj2_asym")
   )
   res = lapply(names(L), function(x) {
     y = L[[x]]
+    y = trimws(y)
+    names(y) = trimws(names(y))
     xurl = x
     xurl[xurl == "pediatric"] = "obj1"
     xurl[xurl == "infant"] = "obj2"
