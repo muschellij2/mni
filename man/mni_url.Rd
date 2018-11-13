@@ -39,5 +39,7 @@ df$url = sapply(df$group, mni_url)
 df$url = file.path(df$url, df$file)
 
 destfile = tempfile(fileext = ".zip")
+\dontrun{
 dl = download.file(url = df$url[2], destfile = destfile)
+}
 }

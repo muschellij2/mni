@@ -25,7 +25,9 @@
 #' df$url = file.path(df$url, df$file)
 #'
 #' destfile = tempfile(fileext = ".zip")
+#' \dontrun{
 #' dl = download.file(url = df$url[2], destfile = destfile)
+#' }
 mni_url = function(
   group =
     c("icbm152", "PD25", "colin27", "mni305", "pediatric", "infant")
