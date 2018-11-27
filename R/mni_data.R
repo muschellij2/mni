@@ -61,7 +61,7 @@ mni_datasets = function(type = c("nifti", "minc1", "minc2")) {
     xurl[xurl == "pediatric"] = "obj1"
     xurl[xurl == "infant"] = "obj2"
 
-    df = data.frame(file = y, name = names(y), group = x,
+    df = data.frame(file = y, group_name = names(y), group = x,
                     path = file.path(xurl, y),
                     stringsAsFactors = FALSE)
     df$file = paste0(df$path, "_", type, ".zip")
@@ -69,5 +69,7 @@ mni_datasets = function(type = c("nifti", "minc1", "minc2")) {
   })
   res = do.call(rbind, res)
   rownames(res) = NULL
+  res$url = sapply(res$group, mni_url)
+  res$url = file.path(res$url, res$file)
   return(res)
 }
