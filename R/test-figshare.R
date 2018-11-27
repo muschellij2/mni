@@ -1,7 +1,8 @@
 testthat::context("Figshare downloads")
-data("mni_figshare")
+env = new.env()
+data("mni_figshare", envir = env, package = "mni")
 
-df = mni_figshare
+df = env$mni_figshare
 
 testthat::test_that("httr::HEAD returns 200 for Figshare", {
 
