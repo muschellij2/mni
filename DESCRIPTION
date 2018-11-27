@@ -2,7 +2,7 @@ Type: Package
 Package: mni
 Title: Human 'MNI' (Montreal Neurological Institute) Adult
     Templates
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
     person(given = "John",
            family = "Muschelli",
@@ -21,10 +21,12 @@ Suggests:
     utils,
     covr,
     knitr,
+    httr,
     rmarkdown,
     testthat
 Encoding: UTF-8
 LazyData: true
+LazyLoad: true
 VignetteBuilder: knitr
 RoxygenNote: 6.1.0
 

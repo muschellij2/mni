@@ -15,6 +15,7 @@ mni_datasets = function(type = c("nifti", "minc1", "minc2")) {
       "ICBM152 linear" = "mni_icbm152_lin",
       "ICBM152 nonlinear 6th generation" = "mni_icbm152_nl_VI",
       "ICBM152 2009a Nonlinear Asymmetric" = "mni_icbm152_nlin_asym_09a",
+      "ICBM152 2009a Nonlinear Symmetric" = "mni_icbm152_nlin_sym_09a",
       "ICBM152 2009b Nonlinear Symmetric" = "mni_icbm152_nlin_sym_09b",
       "ICBM152 2009b Nonlinear Asymmetric" = "mni_icbm152_nlin_asym_09b",
       "ICBM152 2009c Nonlinear Symmetric" = "mni_icbm152_nlin_sym_09c",
