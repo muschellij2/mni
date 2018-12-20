@@ -29,4 +29,3 @@ LazyData: true
 LazyLoad: true
 VignetteBuilder: knitr
 RoxygenNote: 6.1.0
-
