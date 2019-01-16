@@ -14,4 +14,3 @@ deploy:
   'on':
     tags: yes
     repo: muschellij2/mni
-
