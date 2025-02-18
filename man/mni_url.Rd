@@ -5,8 +5,9 @@
 \alias{mni_urls}
 \title{MNI Download URL}
 \usage{
-mni_url(group = c("icbm152", "PD25", "colin27", "mni305", "pediatric",
-  "infant"))
+mni_url(
+  group = c("icbm152", "PD25", "colin27", "mni305", "pediatric", "infant")
+)
 
 mni_urls()
 }

@@ -4,11 +4,13 @@
 \name{mni_dataset_figshare_link}
 \alias{mni_dataset_figshare_link}
 \title{Links from Figshare to MNI data}
-\format{A \code{data.frame} with columns
+\format{
+A \code{data.frame} with columns
 \describe{
 \item{url}{download url MNI}
 \item{name}{filename to download}
-}}
+}
+}
 \usage{
 mni_dataset_figshare_link
 }
